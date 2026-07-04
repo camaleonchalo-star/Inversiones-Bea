@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>routes.ts</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;padding:40px}
+pre{background:#222;color:#0f0;padding:16px;overflow:auto}
+</style>
+</head>
+<body>
+<h1>Contenido del archivo de rutas</h1>
+<pre>import { Router } from &quot;express&quot;;
+
+import { health } from &quot;../controllers/health.controller.js&quot;;
+
+const router = Router();
+
+router.get(&quot;/health&quot;, health);
+
+export default router;
+</pre>
+</body>
+</html>

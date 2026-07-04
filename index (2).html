@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>env.ts</title><style>body{font-family:Arial;background:#f4f4f4;padding:40px}pre{background:#222;color:#0f0;padding:16px;overflow:auto}</style></head><body><h1>Contenido de env.ts</h1><pre>import dotenv from &quot;dotenv&quot;;
+
+dotenv.config();
+
+export const env = {
+  PORT: Number(process.env.PORT) || 4000,
+  NODE_ENV: process.env.NODE_ENV || &quot;development&quot;,
+};</pre></body></html>

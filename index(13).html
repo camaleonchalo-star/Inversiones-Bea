@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>health.ts</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;padding:40px}
+pre{background:#222;color:#0f0;padding:16px;overflow:auto}
+</style>
+</head>
+<body>
+<h1>Contenido de health.ts</h1>
+<pre>import { Request, Response } from &quot;express&quot;;
+
+export const health = (
+  req: Request,
+  res: Response
+) =&gt; {
+
+  res.status(200).json({
+
+    success: true,
+
+    message: &quot;API Inversiones Bea funcionando correctamente&quot;,
+
+    version: &quot;1.0.0&quot;
+
+  });
+
+};</pre>
+</body>
+</html>
